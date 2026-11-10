@@ -10,6 +10,6 @@ char name[50];
     printf("Vad heter du?\n");
     scanf ("%s", name);
 
-    printf ("Hej %s! Vad trevligt att träffas!\n", name); // Hej 
+    printf ("Hej %s! Vad trevligt att träffas!\n", name); // Hej vad heter du 
     return 0;
 }    
