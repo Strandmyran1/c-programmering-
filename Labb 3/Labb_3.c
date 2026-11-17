@@ -85,7 +85,7 @@ while (operator != 8){
         printf("Result: %lf\n", result);
         break;
 
-        case '7':
+        case '7': {
         int n;
         double sum = 0.0;
         double currentNum;
@@ -96,10 +96,24 @@ while (operator != 8){
         for (int a = 0; a < n; a++) {
             printf("Enter a number: %d", a + 1);
             scanf("%lf", &currentNum);
-        }
         
-
+            sum = sum + currentNum;
+        }
+        if (n>0) {
+            double Avg = sum / n;
+            printf("The avarge is: %lf\n", Avg);    
+        }
+        else {
+            printf("Invalid. \n");
+        }
+        break;
+        }
+        case '8':
+        printf("Exiting.\n");
+        break;
+        default:
+        printf("Invalid option. Please try again.\n");
+        break;
     }
-
 } 
 }   
