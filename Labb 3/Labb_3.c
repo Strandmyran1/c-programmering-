@@ -41,28 +41,28 @@ while (operator != 8){
     switch (operator){
         case '1':
         printf("Enter two numbers: ");
-        scanf("%.0lf %.0lf", &num1, &num2);
+        scanf("%lf %lf", &num1, &num2);
         result = Sum (num1, num2);
-        printf("Result: %.0lf\n", result);
+        printf("Result: %lf\n", result);
         break;
         
         case '2':
         printf("Enter two numbers: ");
-        scanf("%.0lf %.0lf", &num1, &num2);
+        scanf("%lf %lf", &num1, &num2);
         result = Sub (num1, num2);
-        printf("Result: %.0lf\n", result);
+        printf("Result: %lf\n", result);
         break;
         
         case '3':
         printf("Enter two numbers: ");
-        scanf("%.0lf %.0lf", &num1, &num2);
+        scanf("%lf %lf", &num1, &num2);
         result = Mul (num1, num2);
-        printf("Result: %.0lf\n", result);
+        printf("Result: %lf\n", result);
         break;
 
         case '4':
         printf("Enter two numbers: ");
-        scanf("%.0lf %.0lf", &num1, &num2);
+        scanf("%lf %lf", &num1, &num2);
         if (num2 != 0) {
             result = Div (num1, num2);
             printf("Result: %lf\n", result);
@@ -73,14 +73,14 @@ while (operator != 8){
         
         case '5':
         printf("Enter one number: ");
-        scanf("%.0lf", &num1);
+        scanf("%lf", &num1);
         result = Sqr (num1);
         printf("Result: %lf\n", result);
         break;
     
         case '6':
         printf("Enter two numbers: ");
-        scanf("%.0lf %.0lf", &num1, &num2);
+        scanf("%lf %lf", &num1, &num2);
         result = Pow (num1, num2);
         printf("Result: %lf\n", result);
         break;
@@ -91,7 +91,7 @@ while (operator != 8){
         double currentNum;
 
         printf("How many numbers do you want to do the average for: ");
-        scanf("&d", &n);
+        scanf("%d", &n);
         
         for (int a = 0; a < n; a++) {
             printf("Enter a number: %d", a + 1);
