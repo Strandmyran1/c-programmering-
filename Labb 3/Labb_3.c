@@ -31,11 +31,11 @@ double Avg (double num1, double num2){
 
 int main() {
 
-    double num1, num2m, result;
+    double num1, num2, result;
     char operator;
 
 printf("1. Sum \n2. Sub \n3. Mul \n4. Div \n5. Sqr \n6. Pow \n7. Avg \n8. Exit \n Enter an option: ");
-scnanf("%c", &operator);
+scanf("%c", &operator);
 
 while (operator != 8){
     switch (operator){
@@ -43,21 +43,21 @@ while (operator != 8){
         printf("Enter two numbers: ");
         scanf("%.0lf %.0lf", &num1, &num2);
         result = Sum (num1, num2);
-        printf("Result: %lf\n", result);
+        printf("Result: %.0lf\n", result);
         break;
         
         case '2':
         printf("Enter two numbers: ");
         scanf("%.0lf %.0lf", &num1, &num2);
         result = Sub (num1, num2);
-        printf("Result: %lf\n", result);
+        printf("Result: %.0lf\n", result);
         break;
         
         case '3':
         printf("Enter two numbers: ");
         scanf("%.0lf %.0lf", &num1, &num2);
         result = Mul (num1, num2);
-        printf("Result: %lf\n", result);
+        printf("Result: %.0lf\n", result);
         break;
 
         case '4':
@@ -78,5 +78,28 @@ while (operator != 8){
         printf("Result: %lf\n", result);
         break;
     
+        case '6':
+        printf("Enter two numbers: ");
+        scanf("%.0lf %.0lf", &num1, &num2);
+        result = Pow (num1, num2);
+        printf("Result: %lf\n", result);
+        break;
+
+        case '7':
+        int n;
+        double sum = 0.0;
+        double currentNum;
+
+        printf("How many numbers do you want to do the average for: ");
+        scanf("&d", &n);
+        
+        for (int a = 0; a < n; a++) {
+            printf("Enter a number: %d", a + 1);
+            scanf("%lf", &currentNum);
+        }
+        
+
     }
-}    
+
+} 
+}   
