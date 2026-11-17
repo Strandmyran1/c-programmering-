@@ -34,11 +34,49 @@ int main() {
     double num1, num2m, result;
     char operator;
 
-printf("1. Sum (+)\n2. Sub (-)\n3. Mul (*)\n4. Div (/)\n5. Sqr (s)\n6. Pow (^)\n7. Avg (a)\n8. Exit (e)\n Enter an option: ");
+printf("1. Sum \n2. Sub \n3. Mul \n4. Div \n5. Sqr \n6. Pow \n7. Avg \n8. Exit \n Enter an option: ");
 scnanf("%c", &operator);
 
-while (operator != 'e'){
+while (operator != 8){
+    switch (operator){
+        case '1':
+        printf("Enter two numbers: ");
+        scanf("%.0lf %.0lf", &num1, &num2);
+        result = Sum (num1, num2);
+        printf("Result: %lf\n", result);
+        break;
+        
+        case '2':
+        printf("Enter two numbers: ");
+        scanf("%.0lf %.0lf", &num1, &num2);
+        result = Sub (num1, num2);
+        printf("Result: %lf\n", result);
+        break;
+        
+        case '3':
+        printf("Enter two numbers: ");
+        scanf("%.0lf %.0lf", &num1, &num2);
+        result = Mul (num1, num2);
+        printf("Result: %lf\n", result);
+        break;
 
+        case '4':
+        printf("Enter two numbers: ");
+        scanf("%.0lf %.0lf", &num1, &num2);
+        if (num2 != 0) {
+            result = Div (num1, num2);
+            printf("Result: %lf\n", result);
+        } else {
+            printf("You can not divide by zero\n"); 
+        }
+        break;
+        
+        case '5':
+        printf("Enter one number: ");
+        scanf("%.0lf", &num1);
+        result = Sqr (num1);
+        printf("Result: %lf\n", result);
+        break;
     
-}
-}
+    }
+}    
