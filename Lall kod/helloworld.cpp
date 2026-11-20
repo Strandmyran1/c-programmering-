@@ -1,15 +1,19 @@
 #include <stdio.h>
-#include <windows.h>
 
-int main()
-{
-SetConsoleOutputCP(CP_UTF8);
+int main() {
+    // Declare and initialize variables here
+    int number = 12;
+    // Calculate remainder
+    int remainder = number % 5;
 
-char name[50];
+    // Check if number is even or odd
+    
+    int is_even = (number % 2 == 0);
+    // Print results
+    
+    printf("Number: %d\n", number);
+    printf("Remainder when divided by 5: %d\n", remainder);
+    printf("%d is even? %d\n", number, is_even);
 
-    printf("Vad heter du?\n");
-    scanf ("%s", name);
-
-    printf ("Hej %s! Vad trevligt att träffas!\n", name); // Hej vad heter du 
     return 0;
-}    
+}
